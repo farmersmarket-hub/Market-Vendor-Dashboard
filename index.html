@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Information Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #2e2e2e;
+    }
+
+    header {
+      background-color: #1f3a28;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img.logo {
+      height: 60px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .dashboard-header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    .dashboard-header h1 {
+      font-size: 2.5em;
+      color: #1f3a28;
+      margin-bottom: 10px;
+    }
+
+    .dashboard-header p {
+      font-size: 1em;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .dashboard-container {
+      display: flex;
+      justify-content: center;
+      padding: 0 20px 60px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 1200px;
+      height: 800px;
+      border: none;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="assets/images/UC_logo.png.avif" alt="University of Cincinnati" class="logo">
+    <nav>
+      <a href="https://farmersmarket-hub.github.io/Home/">Home</a>
+      <a href="https://farmersmarket-hub.github.io/Vendor-Portal/">Vendors</a>
+      <a href="https://farmersmarket-hub.github.io/Market-Manager-Portal/">Market Manager</a>
+      <a href="https://farmersmarket-hub.github.io/Funder-Portal/">Funders</a>
+      <a href="https://farmersmarket-hub.github.io/Technical-Assistance/">Technical Assistance</a>
+    </nav>
+  </header>
+
+  <section class="dashboard-header">
+    <a href="https://farmersmarket-hub.github.io/Vendor-Portal/" style="color:#1f3a28;text-decoration: none;font-size: 0.9em;">&lt; Back</a>
+    <h1>Vendor Information Dashboard</h1>
+    <p>Use this dashboard to understand more about who the vendors are, what types of products and services they offer, and where they are located across the region.</p>
+  </section>
+  <section class="dashboard-container" style="display: flex; justify-content: center; padding: 40px 20px;">
+    <!-- <script type='module' src='https://dataanalytics.uc.edu/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://dataanalytics.uc.edu/t/ArtsSciences/views/Sample/Dashboard1' width='1000' height='840' hide-tabs toolbar='bottom' ></tableau-viz> -->
+    <!-- <div style="text-align:center; padding: 100px;">
+        <p>This dashboard will be embedded securely from Tableau Cloud using JWT authentication.</p>
+      </div> -->
+      <script type='module' src='https://dataanalytics.uc.edu/javascripts/api/tableau.embedding.3.latest.min.js'></script><tableau-viz id='tableau-viz' src='https://dataanalytics.uc.edu/t/ArtsSciences/views/Sample/Dashboard1' width='1000' height='840' hide-tabs toolbar='bottom' ></tableau-viz>
+      
+  </section>
+  
+  
+  
+  
+</body>
+</html>
